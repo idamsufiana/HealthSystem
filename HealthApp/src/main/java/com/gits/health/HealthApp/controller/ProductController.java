@@ -2,6 +2,8 @@ package com.gits.health.HealthApp.controller;
 
 
 
+import com.gits.health.HealthApp.common.Secured;
+import com.gits.health.HealthApp.constant.ApplicationEnum;
 import com.gits.health.HealthApp.model.Product;
 import com.gits.health.HealthApp.model.dto.ProductDto;
 import com.gits.health.HealthApp.service.ProductService;
@@ -23,6 +25,7 @@ public class ProductController extends BaseController {
     @Autowired
     ProductService productService;
 
+    @Secured({ApplicationEnum.Group.Admin})
     @GetMapping({"/{id}"})
     public ResponseEntity<Object> get(@PathVariable Long id) throws Throwable {
         Optional<Product> optionalE = productService.get(id);
