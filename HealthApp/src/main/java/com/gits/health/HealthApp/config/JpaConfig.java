@@ -22,7 +22,7 @@ import java.util.HashMap;
 @EnableJpaRepositories(
         entityManagerFactoryRef = "appEntityManagerFactory",
         transactionManagerRef = "appTransactionManager",
-        basePackages = {"id.co.neo"})
+        basePackages = {"com.gits.health"})
 public class JpaConfig {
 
     @Autowired
@@ -40,7 +40,7 @@ public class JpaConfig {
 
         return builder
                 .dataSource(dataSource)
-                .packages("id.co.neo")
+                .packages("com.gits.health")
                 .persistenceUnit("app")
                 .properties(properties).build();
     }

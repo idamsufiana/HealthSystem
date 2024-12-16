@@ -2,13 +2,16 @@ package com.gits.health.HealthApp.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.HashSet;
 import java.util.Set;
 
-@Data
+@Getter
+@Setter
 @Entity
-public class Category{
+public class Category extends CrudEntity{
 
     private String code;
 
