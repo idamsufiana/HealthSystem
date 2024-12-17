@@ -9,7 +9,7 @@ import java.util.Set;
 
 @Getter
 @Setter
-@Entity
+@Entity(name = "product")
 public class Product extends CrudEntity{
 
     private String name;
