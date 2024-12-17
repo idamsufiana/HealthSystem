@@ -11,7 +11,7 @@ import java.util.List;
 
 @Repository
 public interface ProductRepository extends JpaRepository<Product, Long> {
-    @Query("select d from Product d where d.sku = ?1")
+    @Query("select d from product d where d.sku = ?1")
     List<Product> findBySKu(String sku);
 
 

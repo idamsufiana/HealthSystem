@@ -10,7 +10,7 @@ import java.util.Set;
 
 @Getter
 @Setter
-@Entity
+@Entity(name = "category")
 public class Category extends CrudEntity{
 
     private String code;
