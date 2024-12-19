@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const apiClient = axios.create({
-  baseURL: 'http://localhost:8080/api/products/', // Base URL for the API
+  baseURL: 'http://localhost:8080/Gits/product/', // Base URL for the API
 });
 
 // Add a request interceptor to dynamically add the Bearer token to each request
