@@ -14,4 +14,4 @@ crud product available
 
 need to add :
 
-modal in front end 
+modal popup in front end 
