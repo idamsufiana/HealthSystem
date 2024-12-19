@@ -11,7 +11,3 @@ Step to build :
 Description :
 retrieve data from satu api , this app save list product from satusehat based on sku
 crud product available 
-
-need to add :
-
-modal popup in front end 
