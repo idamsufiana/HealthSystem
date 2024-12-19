@@ -4,7 +4,7 @@ Health System
 Step to build :
 
 1. create db for product and category table in pgAdmin
-2. mvn spring-boot -> HealthApp
+2. mvn spring-boot:run -> HealthApp
 3. npm start -> health-fe
 
 
